@@ -1,0 +1,17 @@
+{
+    "propertyOrdering": {
+        "enabled": false
+    },
+    "zeroUnit": {
+        "style": "no_unit"
+    },
+    "borderZero": {
+        "style": "none"
+    },
+    "urlFormat": {
+        "enabled": false
+    },
+    "hexLength": {
+        "enabled": false
+    }
+}
