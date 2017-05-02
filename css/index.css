@@ -114,6 +114,7 @@
   margin-left: 50px; 
 }
 
+
 .slider {
   position: relative;
   width: 1123px;
@@ -121,31 +122,58 @@
   margin: 0 auto;
 }
 
+.slider input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
 .slider-controls {
   position: absolute;
-  bottom: 95px;
-  left: 50%;
+  bottom: 67px;
+  left: 49%;
   width: 200px;
   height: 10px;
   margin-left: -100px;
   text-align: center;
-  z-index: 80; 
+  z-index: 100;
 }
 
-.slider-controls i {
+.slider-controls label {
   display: inline-block;
   width: 5px;
   height: 5px;
   margin: 0 3px;
-  background: #fff;
-  border: 5px solid #fff;
+  background: #ffffff;
+  border: 3px solid white;
   vertical-align: top;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.slider-controls .active {
-  background: #c1c1c1;
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background:#c1c1c1;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .slide {
@@ -155,6 +183,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  animation: fade-in 1s ease;
 }
 
 .slide .btn {
@@ -162,29 +191,31 @@
 }
 
 .slide:nth-child(1) {
-  background-image: url(../img/slide1.png);
-  background-repeat: no-repeat;
-  background-position: 100% 10px;   
+  background: url("../img/slide1.png") no-repeat 100% 10px;
+}
+
+.slide:nth-child(2) {
+  background: url("../img/slide2.png") no-repeat 100% 10px;
+}
+
+.slide:nth-child(3) {
+  background: url("../img/slide3.png") no-repeat 100% 10px;
 }
 
 .slide {
   display: none;
 }
 
-.slide:nth-child(1) {
+#btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
 
-.slide:nth-child(2) {
-  background-image: url(../img/slide2.png);
-  background-repeat: no-repeat;
-  background-position: 100% 10px;
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
 }
 
-.slide:nth-child(3) {
-  background-image: url(../img/slide3.png);
-  background-repeat: no-repeat;
-  background-position: 100% 0px;
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
 }
 
 .services {
