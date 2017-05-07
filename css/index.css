@@ -530,6 +530,7 @@ footer .container {
   outline: none;
   width: 723px;
   padding: 10px 12px;
+  resize: none;
 }
 
 .post-form input[type="text"]:hover,
@@ -672,5 +673,3 @@ footer .container {
 .modal-overlay-show {
   display: block;
 }
-
-
