@@ -40,7 +40,12 @@
 
 body {
   margin: 0 auto;
+  min-width: 1200px;
+  font-family: 'Roboto', Arial, sans-serif;
   line-height: 22px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
 }
 
 h1, h2, h3 {
@@ -94,6 +99,7 @@ h3 {
   padding-right: 50px;
   padding-top: 4px;
   transition: all 0.3s linear;
+  font-weight: bold;
 }
 
 .btn-primary {
@@ -167,9 +173,6 @@ button[type="submit"]:active {
   box-shadow: inset 0 3px 0 0 #cacaca;
   color: rgba(000, 000, 000, 0.3);
 }
-
-
-/
 
 /*Modal window*/
 
@@ -397,7 +400,6 @@ button[type="submit"]:active {
 .main-header {
   background-color: #eeeeee;
   padding-top: 50px;
-  min-width: 1200px;
 }
 
 .main-nav {
