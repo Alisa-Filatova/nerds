@@ -227,11 +227,11 @@
   text-align: center;
   padding: 0;
   opacity: 0.2;
+  transition: opacity 0.3s linear;
 }
 
 .customers li:hover {
   opacity: 1;
-  transition: 0.8s;
 }
 
 .customers li:active {

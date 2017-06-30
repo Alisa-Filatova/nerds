@@ -577,6 +577,7 @@ footer .container {
   border-radius: 50%;
   background-color: #e1e1e1;
   font-size: 0;
+  transition: background-color 0.3s linear;
 }
 
 .social-btn i {
@@ -617,7 +618,6 @@ footer .container {
 
 .social-btn:hover {
   background-color: #e74246;
-  transition: background-color 0.5s linear;
 }
 
 .discount {
